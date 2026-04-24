@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analizador de Personalidad · Instagram</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f0f13;
+      --surface: #1a1a24;
+      --surface2: #23232f;
+      --border: #2e2e3e;
+      --accent: #833ab4;
+      --accent2: #fd1d1d;
+      --accent3: #fcb045;
+      --text: #e8e8f0;
+      --muted: #8888a0;
+      --radius: 14px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    header h1 { font-size: 17px; font-weight: 600; letter-spacing: -0.3px; }
+    header span { font-size: 13px; color: var(--muted); margin-left: auto; }
+
+    /* ── LAYOUT ── */
+    .layout {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    /* ── SIDEBAR ── */
+    aside {
+      width: 240px;
+      flex-shrink: 0;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      padding: 20px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      overflow-y: auto;
+    }
+    aside h2 {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      padding: 0 8px 10px;
+    }
+    .profile-btn {
+      background: none;
+      border: none;
+      color: var(--text);
+      cursor: pointer;
+      padding: 10px 12px;
+      border-radius: 10px;
+      text-align: left;
+      width: 100%;
+      transition: background 0.15s;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .profile-btn:hover { background: var(--surface2); }
+    .profile-btn.active {
+      background: linear-gradient(135deg, rgba(131,58,180,.25), rgba(253,29,29,.15));
+      border: 1px solid rgba(131,58,180,.4);
+    }
+    .profile-btn .username { font-size: 14px; font-weight: 600; }
+    .profile-btn .fullname { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    /* ── MAIN ── */
+    main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 32px;
+    }
+
+    .empty-state {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: var(--muted);
+      gap: 12px;
+    }
+    .empty-state .icon { font-size: 48px; }
+    .empty-state p { font-size: 15px; }
+
+    /* ── PROFILE HEADER ── */
+    .profile-header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .profile-info { flex: 1; }
+    .profile-info .handle { font-size: 22px; font-weight: 700; }
+    .profile-info .name { font-size: 14px; color: var(--muted); margin-top: 2px; }
+    .badge {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .badge strong { color: var(--text); }
+
+    /* ── CARDS GRID ── */
+    .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .card-full { grid-column: 1 / -1; }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+    }
+    .card-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .card-value {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    /* TIPO card */
+    .card-tipo {
+      background: linear-gradient(135deg, rgba(131,58,180,.18), rgba(253,29,29,.1));
+      border-color: rgba(131,58,180,.35);
+    }
+    .card-tipo .card-value {
+      font-size: 20px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #c879ff, #ff6b6b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* RASGOS card */
+    .rasgos-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .rasgos-list li {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding: 10px 12px;
+      background: var(--surface2);
+      border-radius: 9px;
+    }
+    .rasgo-nombre { font-size: 13px; font-weight: 600; color: #c879ff; }
+    .rasgo-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+    /* Loading */
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: var(--muted);
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">📊</div>
+  <h1>Analizador de Personalidad · Instagram</h1>
+  <span id="header-info">Selecciona un perfil</span>
+</header>
+
+<div class="layout">
+  <aside>
+    <h2>Perfiles analizados</h2>
+    <div id="sidebar-list"></div>
+  </aside>
+
+  <main id="main">
+    <div class="empty-state">
+      <div class="icon">🔍</div>
+      <p>Selecciona un perfil de la lista para ver su análisis</p>
+    </div>
+  </main>
+</div>
+
+<script>
+  async function loadList() {
+    const res = await fetch("/api/analyses");
+    const list = await res.json();
+    const container = document.getElementById("sidebar-list");
+    container.innerHTML = "";
+
+    if (!list.length) {
+      container.innerHTML = '<p style="padding:8px;color:var(--muted);font-size:13px;">No hay análisis guardados</p>';
+      return;
+    }
+
+    list.forEach(({ username, nombre_completo }) => {
+      const btn = document.createElement("button");
+      btn.className = "profile-btn";
+      btn.innerHTML = `
+        <span class="username">@${username}</span>
+        <span class="fullname">${nombre_completo || ""}</span>
+      `;
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".profile-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        loadAnalysis(username);
+      });
+      container.appendChild(btn);
+    });
+  }
+
+  async function loadAnalysis(username) {
+    const main = document.getElementById("main");
+    main.innerHTML = '<div class="loading">Cargando análisis...</div>';
+
+    const res = await fetch(`/api/analyses/${username}`);
+    const data = await res.json();
+
+    document.getElementById("header-info").textContent = `@${data.username} · ${data.posts_analizados} posts analizados`;
+
+    const parsed = parseAnalysis(data.analisis);
+    const initial = (data.nombre_completo || data.username).trim()[0].toUpperCase();
+
+    main.innerHTML = `
+      <div class="profile-header">
+        <div class="avatar">${initial}</div>
+        <div class="profile-info">
+          <div class="handle">@${data.username}</div>
+          <div class="name">${data.nombre_completo || ""}</div>
+        </div>
+        <div class="badge"><strong>${data.posts_analizados}</strong> posts analizados</div>
+      </div>
+
+      <div class="cards">
+        <div class="card card-tipo">
+          <div class="card-label">Tipo de personalidad</div>
+          <div class="card-value">${parsed.tipo || "—"}</div>
+        </div>
+
+        <div class="card">
+          <div class="card-label">Estilo de comunicación</div>
+          <div class="card-value">${parsed.estilo || "—"}</div>
+        </div>
+
+        <div class="card card-full">
+          <div class="card-label">Rasgos principales</div>
+          ${renderRasgos(parsed.rasgos)}
+        </div>
+
+        <div class="card">
+          <div class="card-label">Motivación central</div>
+          <div class="card-value">${parsed.motivacion || "—"}</div>
+        </div>
+
+        <div class="card">
+          <div class="card-label">Resumen</div>
+          <div class="card-value">${parsed.resumen || "—"}</div>
+        </div>
+      </div>
+    `;
+  }
+
+  function parseAnalysis(text) {
+    const result = {};
+
+    const tipoMatch = text.match(/\*\*TIPO DE PERSONALIDAD:\*\*\s*(.+)/);
+    if (tipoMatch) result.tipo = tipoMatch[1].trim();
+
+    const estiloMatch = text.match(/\*\*ESTILO DE COMUNICACI[ÓO]N:\*\*\s*(.+)/);
+    if (estiloMatch) result.estilo = estiloMatch[1].trim();
+
+    const motivMatch = text.match(/\*\*MOTIVACI[ÓO]N CENTRAL:\*\*\s*(.+)/);
+    if (motivMatch) result.motivacion = motivMatch[1].trim();
+
+    const resumenMatch = text.match(/\*\*RESUMEN:\*\*\s*([\s\S]+?)$/);
+    if (resumenMatch) result.resumen = resumenMatch[1].trim().replace(/\n/g, " ");
+
+    const rasgosMatch = text.match(/\*\*RASGOS PRINCIPALES:\*\*([\s\S]+?)(?=\*\*ESTILO)/);
+    if (rasgosMatch) {
+      result.rasgos = rasgosMatch[1]
+        .trim()
+        .split("\n")
+        .filter(l => l.trim().startsWith("•"))
+        .map(l => {
+          const clean = l.replace(/^•\s*/, "").trim();
+          const colonIdx = clean.indexOf(":**");
+          if (colonIdx !== -1) {
+            const nombre = clean.slice(2, colonIdx).trim();
+            const desc = clean.slice(colonIdx + 3).trim();
+            return { nombre, desc };
+          }
+          const simpleColon = clean.replace(/\*\*/g, "").indexOf(":");
+          if (simpleColon !== -1) {
+            return {
+              nombre: clean.replace(/\*\*/g, "").slice(0, simpleColon).trim(),
+              desc: clean.replace(/\*\*/g, "").slice(simpleColon + 1).trim(),
+            };
+          }
+          return { nombre: clean.replace(/\*\*/g, ""), desc: "" };
+        });
+    }
+
+    return result;
+  }
+
+  function renderRasgos(rasgos) {
+    if (!rasgos || !rasgos.length) return '<p style="color:var(--muted)">No disponible</p>';
+    return `<ul class="rasgos-list">
+      ${rasgos.map(r => `
+        <li>
+          <span class="rasgo-nombre">${r.nombre}</span>
+          ${r.desc ? `<span class="rasgo-desc">${r.desc}</span>` : ""}
+        </li>
+      `).join("")}
+    </ul>`;
+  }
+
+  loadList();
+</script>
+</body>
+</html>
