@@ -1,0 +1,19 @@
+#Entornos virtuales
+
+venv/
+env/
+ENV/
+.venv/
+
+#Archivos de entorno
+
+.env
+
+#Logs
+
+*.log
+
+Archivos temporales
+#
+*.tmp
+*.temp
