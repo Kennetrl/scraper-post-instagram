@@ -11,6 +11,7 @@ load_dotenv()
 
 COOKIE_STRING   = os.getenv("INSTA_COOKIE", "")
 TARGET_USERNAME = os.getenv("TARGET_USERNAME", "")
+NUMBER_POSTS    = int(os.getenv("NUMBER_POSTS", 10))
 IG_APP_ID       = "936619743392459"
 
 
@@ -104,7 +105,7 @@ def obtener_info_perfil(username: str, session: requests.Session) -> dict:
 
 
 # Obtiene los posts recientes: fecha, caption, likes, URL y tipo de media
-def obtener_posts(user_id: str, session: requests.Session, cantidad: int = 12) -> list:
+def obtener_posts(user_id: str, session: requests.Session, cantidad: int = NUMBER_POSTS) -> list:
     url = f"https://www.instagram.com/api/v1/feed/user/{user_id}/?count={cantidad}"
     print(f"\n[2/3] Obteniendo últimos {cantidad} posts...")
 
@@ -139,7 +140,7 @@ def obtener_posts(user_id: str, session: requests.Session, cantidad: int = 12) -
             "url":               f"https://www.instagram.com/p/{shortcode}/",
             "fecha":             datetime.fromtimestamp(timestamp, tz=timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
             "likes":             item.get("like_count", 0),
-            "caption":           caption_texto[:300],
+            "caption":           caption_texto,
             "comentarios_count": item.get("comment_count", 0),
             "tipo_media":        item.get("media_type", 1),
         })
@@ -268,7 +269,7 @@ def main():
     user_id = perfil["user_id"]
     esperar(2)
 
-    posts = obtener_posts(user_id, session, cantidad=12)
+    posts = obtener_posts(user_id, session, cantidad=NUMBER_POSTS)
     esperar(2)
 
     print(f"\n[3/3] Obteniendo comentarios...")
