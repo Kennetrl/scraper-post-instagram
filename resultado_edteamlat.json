@@ -1,0 +1,359 @@
+{
+  "perfil": {
+    "username": "edteamlat",
+    "nombre_completo": "EDteam | Cursos Online",
+    "biografia": "Aprende programación e inteligencia artificial porque en español nadie explica mejor que EDteam",
+    "seguidores": 164850,
+    "siguiendo": 19,
+    "total_posts": 4531,
+    "user_id": "1900816942",
+    "es_privado": false,
+    "verificado": false,
+    "foto_perfil_url": "https://instagram.fuio13-1.fna.fbcdn.net/v/t51.2885-19/73034217_390766278271379_8709574921824501760_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xNTAuYzIifQ&_nc_ht=instagram.fuio13-1.fna.fbcdn.net&_nc_cat=111&_nc_oc=Q6cZ2gEo5e2H0JYW0QDdytyrxMCtzj1V3f7ZdiEDZc4geK2cUtiP1o46zNv3zKShNCpIktk&_nc_ohc=iSwVWqjDO6gQ7kNvwGgogwm&_nc_gid=4ITdLFCBSx-RpNlVDOUErw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Af3gjiA2dkP_kPLAnw8u3Uja3IWTNZW7jpW0QmR0xgaMbw&oe=69F1500A&_nc_sid=8b3546"
+  },
+  "posts": [
+    {
+      "post_id": "3882413089375802607_1900816942",
+      "shortcode": "DXhGiKHklTv",
+      "url": "https://www.instagram.com/p/DXhGiKHklTv/",
+      "fecha": "2026-04-24 14:09 UTC",
+      "likes": 129,
+      "caption": "OpenAI estuvo en silencio mientras todo el mundo daba por muerta a la compañía y celebraba los lanzamientos de la competencia. Pero el silencio no siempre significa quedarse atrás, a veces significa algo mucho más grande. En este video te cuento qué acaba de pasar y la reflexión que deja para cualqu",
+      "comentarios_count": 6,
+      "tipo_media": 2,
+      "primeros_comentarios": [
+        {
+          "autor": "juancasanovas",
+          "texto": "La estrategia del ruido ha sido la de OpenAI hasta ahora",
+          "fecha": "2026-04-24",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "automatrom_industrias",
+          "texto": "No niego la efectividad de claude pero open ai no está muerto . Y en muchas cosas supera a los demás. Codex es asombroso también",
+          "fecha": "2026-04-24",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "phymon",
+          "texto": "Bags?",
+          "fecha": "2026-04-24",
+          "respuesta_autor": null
+        }
+      ]
+    },
+    {
+      "post_id": "3882021743640726582_1900816942",
+      "shortcode": "DXftjVADEw2",
+      "url": "https://www.instagram.com/p/DXftjVADEw2/",
+      "fecha": "2026-04-24 01:12 UTC",
+      "likes": 112,
+      "caption": "La mayoría de devs construye apps en extremos: todo al navegador o todo al servidor. Por eso terminan pesadas o lentas. En este video te explicamos cuál es la solución a este problema, porque en español #NadieExplicaMejor que EDteam.\n\n#nextjs #react #programacion #desarrolloweb #frontend #devlife #p",
+      "comentarios_count": 1,
+      "tipo_media": 2,
+      "primeros_comentarios": [
+        {
+          "autor": "im.cristian.r",
+          "texto": "Que cansado es escuchar dia a dia a los gurues de la programación diciendo que todo lo que haces está mal. So su forma es la correcta 😩 Por acá un senior con mucho cariño les dice... Cierren el hocico un rato.",
+          "fecha": "2026-04-24",
+          "respuesta_autor": null
+        }
+      ]
+    },
+    {
+      "post_id": "3880995418816951108_1900816942",
+      "shortcode": "DXcEMVhgLNE",
+      "url": "https://www.instagram.com/p/DXcEMVhgLNE/",
+      "fecha": "2026-04-22 15:12 UTC",
+      "likes": 649,
+      "caption": "La IA se está volviendo cada vez más cara y muchos están quemando tokens sin darse cuenta, haciendo con IA cosas que se resuelven con una sola línea de código. Si no dominas lo básico, tu billetera lo va a sentir. En este video te explico por qué los fundamentos siguen siendo más importantes que nun",
+      "comentarios_count": 26,
+      "tipo_media": 2,
+      "primeros_comentarios": [
+        {
+          "autor": "johanna.marcela81",
+          "texto": "Yo utilizo windsurf para que me ayude a armar un proyecto con su arquitectura recomendada menos y a corregir errores muy difíciles, pero siempre pido explicaciones y hasta corrijo pequeños errores de código como cambiar una palabra o variables",
+          "fecha": "2026-04-24",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "carlos.bhaa",
+          "texto": "Mmmmm no se che.. Prefiero quemar tokens y pagar: si gastar 50 USD en tokens, en corregir una coma me hace facturar 1000 USD por entregar rápido, no es gasto... es negocio",
+          "fecha": "2026-04-22",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "jorgeruiz83",
+          "texto": "La verdad!!! Yo estoy aprendiendo a programar, mejor con la IA. Pero yo pido que me explique. No tanto que lo haga.",
+          "fecha": "2026-04-24",
+          "respuesta_autor": null
+        }
+      ]
+    },
+    {
+      "post_id": "3880538108281823729_1900816942",
+      "shortcode": "DXacNl5gSHx",
+      "url": "https://www.instagram.com/p/DXacNl5gSHx/",
+      "fecha": "2026-04-22 00:04 UTC",
+      "likes": 728,
+      "caption": "El hackeo a Vercel tiene un culpable silencioso que casi nadie lo ve venir. Se llama Shadow AI y podría estar filtrando datos críticos de tu empresa sin que te entere. En este vide te explico qué es y por qué deberías tomártelo en serio.\n\n#ShadowAI #Ciberseguridad #IA #Vercel #Programación #LoAprend",
+      "comentarios_count": 6,
+      "tipo_media": 2,
+      "primeros_comentarios": [
+        {
+          "autor": "maledriguezgar",
+          "texto": "Ayer hice mi primer despliegue en vercel, siempre hacía softwares para correr de manera local y pues porfin que me sale un cliente hago el software y lo despliego ayer y en la tarde me llega el correo de vercel. quedé ay no pero si lo acabo de subir y ya me hackearon jajajaja luego leí el correo completo y me relaje",
+          "fecha": "2026-04-22",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "yulrred",
+          "texto": "Adivinaré, uso gpt codex en vez de claude code...",
+          "fecha": "2026-04-23",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "jojojaja8989",
+          "texto": "Aja pero por que es peligroso? Nunca lo dijiste",
+          "fecha": "2026-04-22",
+          "respuesta_autor": null
+        }
+      ]
+    },
+    {
+      "post_id": "3880446875929542981_1900816942",
+      "shortcode": "DXaHd_JjgFF",
+      "url": "https://www.instagram.com/p/DXaHd_JjgFF/",
+      "fecha": "2026-04-21 21:03 UTC",
+      "likes": 313,
+      "caption": "Claude Design no es rival para Figma, eso está claro. Pero Anthropic se guardó un as bajo la manga que podría cambiar todo el juego para los equipos de diseño y desarrollo. Figma debería estar preocupada, y en este video te contamos por qué.\n\n#ClaudeDesign #Figma #Anthropic #Diseño #Frontend #IA #Lo",
+      "comentarios_count": 7,
+      "tipo_media": 2,
+      "primeros_comentarios": [
+        {
+          "autor": "victortavarez23",
+          "texto": "Y por ese motivo Aguante Gemini + Nano Banana",
+          "fecha": "2026-04-23",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "sbtianz",
+          "texto": "Tiene mucho potencial pero no aguanta una sesión de pocas interacciones y se acaban los tokens, literal me duró 30 minutos.",
+          "fecha": "2026-04-21",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "maledriguezgar",
+          "texto": "Denle un mesecito apenas es un bebé 👶",
+          "fecha": "2026-04-22",
+          "respuesta_autor": null
+        }
+      ]
+    },
+    {
+      "post_id": "3880357495579782195_1900816942",
+      "shortcode": "DXZzJVNjqwz",
+      "url": "https://www.instagram.com/p/DXZzJVNjqwz/",
+      "fecha": "2026-04-21 18:05 UTC",
+      "likes": 535,
+      "caption": "Vercel fue hackeada el domingo 19 de abril. Una de las plataformas más importantes en el mundo de la programación, pero ¿Cómo fue posible este hackeo? En este video te contamos qué pasó y qué debes hacer para evitar que te ocurra a ti. Porque tú sabes que en español #NadieExplicaMejor que EDteam.\n\n#",
+      "comentarios_count": 6,
+      "tipo_media": 2,
+      "primeros_comentarios": [
+        {
+          "autor": "nenriquez_",
+          "texto": "No me cierra algo… oauth da identidad contra un tercero. Y eventual acceso a ciertos datos que el ser apruebe, como nombre o email. Eso no da acceso a la cuenta de vercel del empleado.",
+          "fecha": "2026-04-21",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "alexis7595",
+          "texto": "Pensé en llave MX",
+          "fecha": "2026-04-23",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "soft_x_oz",
+          "texto": "@joseenriquetv",
+          "fecha": "2026-04-21",
+          "respuesta_autor": null
+        }
+      ]
+    },
+    {
+      "post_id": "3877577997914904037_1900816942",
+      "shortcode": "DXP7KUSlpXl",
+      "url": "https://www.instagram.com/p/DXP7KUSlpXl/",
+      "fecha": "2026-04-17 22:03 UTC",
+      "likes": 537,
+      "caption": "Dejar que la IA “improvise” código suena mágico… hasta que toca mantenerlo. Con Spec Driven Development ganas una fuente de verdad, reglas protegidas y documentación como entregable. Aprende a programar con IA de forma correcta porque en español #NadieExplicaMejor que EDteam.\n\n #IA #Programación #SD",
+      "comentarios_count": 4,
+      "tipo_media": 2,
+      "primeros_comentarios": [
+        {
+          "autor": "fermor_ppt",
+          "texto": "Justo estoy utilizando SDD con Kiro. Mis soluciones de software están mejorando mucho gracias a eso 🙌",
+          "fecha": "2026-04-18",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "roberthsilva27",
+          "texto": "Yo ando en sistema SAas solamente tengo los fundamentos programación  no soy programador, usado full IA pero soy un poco obsesionada ha que siga el plan checkout, siga sus pasos sin salirse tengo buen sistema. Visualmente ando prueba finales estoy integrando las ápi Paypal binance y stripe. Lanzarlo es un MVP me gustaría si desean verlo. Se lo dejo posteado. Es de un juego que se encarga sacar tiempo de un raid,  mostro tiene una ventana de 6 horas . 4 de muerto y 2 h+- pueda que revisa transcurso esa dos hora. Con los datos me alimento predecir. En esa dos hora cuando va salir. Y son muchos raid . Mi primer proyecto . Está funcionando por ahora .",
+          "fecha": "2026-04-18",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "andresfelipe.albornoz",
+          "texto": "Yo no soy programador y me dedico al marketing digital, ahora con Claude Code he construido algunas herramientas por las que en el pasado tenía que pagar, lo hoy me preocupa es la estabilidad de esas herramientas y la seguridad. Quiero seguir creando mis herramientas¿Cuál sería la ruta de aprendizaje?",
+          "fecha": "2026-04-18",
+          "respuesta_autor": null
+        }
+      ]
+    },
+    {
+      "post_id": "3877457924117661646_1900816942",
+      "shortcode": "DXPf3A2jofO",
+      "url": "https://www.instagram.com/p/DXPf3A2jofO/",
+      "fecha": "2026-04-17 18:04 UTC",
+      "likes": 776,
+      "caption": "¿Tu PC tiene mucha RAM y aun así no corre IA en local? El cuello de botella suele ser la VRAM. En este video te explico la diferencia entre RAM (CPU), VRAM (GPU) y la memoria unificada en Macs/SoC, y por qué eso cambia totalmente qué modelo puedes ejecutar en local. Porque en español #NadieExplicaMe",
+      "comentarios_count": 27,
+      "tipo_media": 2,
+      "primeros_comentarios": [
+        {
+          "autor": "jpgortari",
+          "texto": "El ryzen 7 8700g con 32gigas anda bárbaro para modelos locales",
+          "fecha": "2026-04-18",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "poecraft94",
+          "texto": "Si se puede ejecutar con la ram, uno en particular que se hace cuando el modelo no entra completamente en la VRAM es un GPU Offloading qué es cargar capas en la VRAM de la GPU y lo que falta se ejecutan en la cpu mediante la ram",
+          "fecha": "2026-04-17",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "william_cubills",
+          "texto": "Que es bastante Vram? En windows",
+          "fecha": "2026-04-17",
+          "respuesta_autor": null
+        }
+      ]
+    },
+    {
+      "post_id": "3877368827385788828_1900816942",
+      "shortcode": "DXPLmfDgLmc",
+      "url": "https://www.instagram.com/p/DXPLmfDgLmc/",
+      "fecha": "2026-04-17 15:07 UTC",
+      "likes": 254,
+      "caption": "Si la IA ya escribe código… ¿los programadores van a desaparecer? No. El futuro es pensar mejor: planificar, diseñar y entender el negocio, usando la IA para aprender y potenciar tu criterio. Te lo explico porque en español #NadieExplicaMejor que EDteam.\n\n#programación #IA #desarrollodesoftware #sof",
+      "comentarios_count": 5,
+      "tipo_media": 2,
+      "primeros_comentarios": [
+        {
+          "autor": "julian.rios.ok",
+          "texto": "Los programadores ya vencieron, lamentablemente, la IA hace tareas no solo de juniors, sino de perfiles superiores incluso hace tareas de empresas enteras, de punta a punta; sin embargo aún depende de humanos que le den la instrucción perfecta para desarrollar las soluciones, y creo, ahí está la superior ventaja de la capacidad humana de pensar. Aún el factor humanidad sigue siendo determinante para resolver. Pienso, el futuro está en la ciencia de datos, no existe IA sin datos de calidad. Abocarse a estudiar las ciencias de datos es el futuro hoy...hablamos en tres o cuatro años.... 🙌",
+          "fecha": "2026-04-24",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "victor._.antonio",
+          "texto": "Sabes lo que pasa, las especies que no se adaptan a los cambios bruscos, se desaparecen como los dinosaurios",
+          "fecha": "2026-04-19",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "julian.rios.ok",
+          "texto": "Losnpro",
+          "fecha": "2026-04-24",
+          "respuesta_autor": null
+        }
+      ]
+    },
+    {
+      "post_id": "3876853598781423563_1900816942",
+      "shortcode": "DXNWc7Bj7_L",
+      "url": "https://www.instagram.com/p/DXNWc7Bj7_L/",
+      "fecha": "2026-04-16 22:04 UTC",
+      "likes": 196,
+      "caption": "El vibe coding sirve para demos, pero en proyectos reales puede salir carísimo. Aprende por qué necesitas reglas y especificaciones con Spec-Driven Development (SDD) y cómo trabajar con IA con buenas prácticas porque en español #NadieExplicaMejor que EDteam.\n\n #SDD #VibeCoding #Programación #IA #Des",
+      "comentarios_count": 2,
+      "tipo_media": 2,
+      "primeros_comentarios": [
+        {
+          "autor": "sergioa.bohorquezr",
+          "texto": "Totalmente de acuerdo , eso sin contar que ahora todos están haciendo la supuestas súper software y luego no saben ni siquiera que escribió la IA",
+          "fecha": "2026-04-16",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "andracul",
+          "texto": "Xuxa que mal metes la publicidad,  realmente me gustas tus videos, busca otra forma",
+          "fecha": "2026-04-24",
+          "respuesta_autor": null
+        }
+      ]
+    },
+    {
+      "post_id": "3876788443406236275_1900816942",
+      "shortcode": "DXNHoyWkXpz",
+      "url": "https://www.instagram.com/p/DXNHoyWkXpz/",
+      "fecha": "2026-04-16 19:54 UTC",
+      "likes": 332,
+      "caption": "Apple enviará a los ingenieros de Siri a un bootcamp para que aprendan a programar con IA porque tienen solo dos meses para crear el nuevo Siri con Gemini. ¿Lo lograrán? No seas como los ingenieros de Siri y aprende a programar con IA en EDteam. \nLink en el perfil. #loaprendisteenedteam #nadieexplic",
+      "comentarios_count": 10,
+      "tipo_media": 2,
+      "primeros_comentarios": [
+        {
+          "autor": "jmbarraza98",
+          "texto": "Donde les mando el cv jajajaaj",
+          "fecha": "2026-04-16",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "fermor_ppt",
+          "texto": "Los ingenieros viendo tutoriales en Youtube",
+          "fecha": "2026-04-18",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "joan.teller2014",
+          "texto": "En donde puede mandar CV mi equipo? Hahaha",
+          "fecha": "2026-04-16",
+          "respuesta_autor": null
+        }
+      ]
+    },
+    {
+      "post_id": "3876733249301706005_1900816942",
+      "shortcode": "DXM7Fm1kvUV",
+      "url": "https://www.instagram.com/p/DXM7Fm1kvUV/",
+      "fecha": "2026-04-16 18:04 UTC",
+      "likes": 469,
+      "caption": "Si la IA ya escribe el código... entonces, ¿qué hacemos nosotros? ​La respuesta es más sencilla de lo que crees, pero que muchos no aceptan aún. Te lo contamos en este video, porque en español #NadieExplicaMejor que EDteam.\n\n#programacion #ia #desarrollodesoftware #specdriven #vibecodingnoessuficien",
+      "comentarios_count": 3,
+      "tipo_media": 2,
+      "primeros_comentarios": [
+        {
+          "autor": "pablorpa72",
+          "texto": "Que buen análisis",
+          "fecha": "2026-04-18",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "giancarlosmauro",
+          "texto": "Yo estoy super feliz , ahora soy El arquitecto .",
+          "fecha": "2026-04-17",
+          "respuesta_autor": null
+        },
+        {
+          "autor": "floriambra",
+          "texto": "Eso es correcto tio alvaro",
+          "fecha": "2026-04-17",
+          "respuesta_autor": null
+        }
+      ]
+    }
+  ],
+  "generado_en": "2026-04-24 10:25:28"
+}

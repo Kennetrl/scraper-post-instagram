@@ -8,12 +8,11 @@ ENV/
 #Archivos de entorno
 
 .env
-
+cookies.json
 #Logs
 
 *.log
+#Archivos temporales
 
-Archivos temporales
-#
 *.tmp
 *.temp
