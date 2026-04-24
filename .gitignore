@@ -16,3 +16,5 @@ cookies.json
 
 *.tmp
 *.temp
+
+dashboard/node_modules
